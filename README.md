@@ -9,8 +9,18 @@ npm install chainradar
 
 ## Usage
 
-```javascript
+Importing:
+
+```js
+var ChainRadar = require('chainradar');
 ```
+
+Options:
+
+  * `apiUrl` - API ENDPOINT (default: 'http://chainradar.com/api')
+  * `version` - CURRENT API VERSION (default: 'v1')
+  * `coin` - Each API request is relative to a coin, so there is a required parameter coin: string.
+
 
 ### Pre Publish
 
