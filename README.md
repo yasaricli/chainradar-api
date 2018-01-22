@@ -147,3 +147,8 @@ AJAX calls - `30000` total requests referred to linked site domain in a 1 day.
 
 #### PREMIUM
 If Linked limits are not enough for your web-service, then you can [contact us](https://chainradar.com/contact) and we can discuss special limits.
+
+Donations
+=========
+Donations for the work done in this fork are accepted at
+* BCN: `27HTiGScRW1eUbawbmdNCcBThtVFYBDAL4j9XV4drPVcBh2EDBnBRwKfNCezqRpKfLJf5dmANoy6uA2bGtZ3uT5fJGqgzX8`
