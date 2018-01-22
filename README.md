@@ -15,13 +15,47 @@ Importing:
 var ChainRadar = require('chainradar');
 ```
 
+An instance of a api needs to be initialized before it can be used:
+
+```js
+var api = new ChainRadar(options)
+```
+
 Options:
 
   * `apiUrl` - API ENDPOINT **default: 'http://chainradar.com/api'**
   * `version` - CURRENT API VERSION **default: 'v1'**
   * `coin` - Each API request is relative to a coin, so there is a required parameter **default: bcn** 
-             **(aeon, bbr, bcn, btc, dsh, fcn, mcn, qcn, duck, mro, rd)**
 
+#### Status
+
+Get actual coin statistics data.
+
+```js
+api.getStatus((data) => {
+  console.log(data.hash)
+});
+```
+
+#### Blocks headers
+
+Get blocks header data in height range.
+
+```js
+const blockOptions = {
+  from: '100000',
+  to: '100001'
+};
+
+api.getBlocksHeader(blockOptions, (data) => {
+  console.log(data)
+});
+```
+
+Parameters:
+
+* from: integer Blocks starting height.
+* to: integer Blocks ending height.
 
 ### Pre Publish
 
