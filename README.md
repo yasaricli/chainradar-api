@@ -57,6 +57,40 @@ Parameters:
 * from: integer Blocks starting height.
 * to: integer Blocks ending height.
 
+#### Blocks data
+
+Get blocks full data in height range.
+
+```js
+const blockOptions = {
+  from: '100000',
+  to: '100001'
+};
+
+api.getBlocksData(blockOptions, (data) => {
+  console.log(data)
+});
+```
+
+Parameters:
+
+* from: integer Blocks starting height.
+* to: integer Blocks ending height.
+
+#### Block header
+
+Get block header data by height or hash.
+
+```js
+api.getBlockHeader('077f4e2c32688157b695d44792ad9dfd986bbabb3fa7e4472805f9858d020f04', (data) => {
+  console.log(data)
+});
+```
+
+Parameters:
+
+* height|hash: string Block height or hash.
+
 ### Pre Publish
 
     npm run prepublish
