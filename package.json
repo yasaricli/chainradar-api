@@ -1,0 +1,29 @@
+{
+  "name": "chainradar",
+  "version": "0.0.1",
+  "description": "An unofficial node.js client for the chainradar.",
+  "main": "./distribution/chainradar.js",
+  "scripts": {
+    "build": "babel chainradar.js --presets babel-preset-es2015 --out-dir distribution",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasaricli/chainradar-api.git"
+  },
+  "author": "Yasar ICLI <hello@yasaricli.com> (https://www.yasaricli.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasaricli/chainradar-api/issues"
+  },
+  "homepage": "https://github.com/yasaricli/chainradar-api#readme",
+  "dependencies": {
+    "request": "^2.83.0",
+    "requestify": "^0.2.5",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
