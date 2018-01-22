@@ -17,9 +17,10 @@ var ChainRadar = require('chainradar');
 
 Options:
 
-  * `apiUrl` - API ENDPOINT (default: 'http://chainradar.com/api')
-  * `version` - CURRENT API VERSION (default: 'v1')
-  * `coin` - Each API request is relative to a coin, so there is a required parameter default: bcn (aeon, bbr, bcn, btc, dsh, fcn, mcn, qcn, duck, mro, rd)
+  * `apiUrl` - API ENDPOINT **default: 'http://chainradar.com/api'**
+  * `version` - CURRENT API VERSION **default: 'v1'**
+  * `coin` - Each API request is relative to a coin, so there is a required parameter **default: bcn** 
+             **(aeon, bbr, bcn, btc, dsh, fcn, mcn, qcn, duck, mro, rd)**
 
 
 ### Pre Publish
