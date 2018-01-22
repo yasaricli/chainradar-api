@@ -43,7 +43,6 @@ export class Api {
    * Get blocks
    * Header data in height range.
    * {coin}/blocks/range/{from}/{to}/header
-   * coin: string Coin symbol alias .
    * from: integer Blocks starting height.
    * to: integer Blocks ending height.
    */
@@ -54,7 +53,6 @@ export class Api {
   /*
    * Block header
    * Get block header data by height or hash.
-   * coin: string Coin symbol alias
    * height|hash: string Block height or hash.
    */
   getBlockHeader(heightOrHash, callback) {
@@ -64,7 +62,6 @@ export class Api {
   /*
    * Blocks data
    * Get blocks full data in height range.
-   * coin: string Coin symbol alias.
    * from: integer Blocks starting height.
    * to: integer Blocks ending height.
    */
@@ -75,12 +72,27 @@ export class Api {
   /*
    * Block data
    * Get block data by height or hash.
-   * coin: string Coin symbol alias (see supported coins list).
    * height|hash: string Block height or hash.
    */
   getBlockData(heightOrHash, callback) {
     return this.get(`blocks/${heightOrHash}/full`, callback);
   }
 
-  
+  /*
+   * Transaction header
+   * Get transaction header data.
+   * hash: string Transaction hash.
+   */
+  getTransactionHeader(hash, callback) {
+    return this.get(`transactions/${hash}/summary`, callback);
+  }
+
+  /*
+   * Transaction data
+   * Get transaction full data.
+   * hash: string Transaction hash.
+   */
+  getTransactionData(hash, callback) {
+    return this.get(`transactions/${hash}/full`, callback);
+  }
 }

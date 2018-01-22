@@ -12,11 +12,6 @@ npm install chainradar
 ```javascript
 ```
 
-## Usage
-
-```javascript
-```
-
 ### Pre Publish
 
     npm run prepublish
