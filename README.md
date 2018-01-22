@@ -25,7 +25,7 @@ Options:
 
   * `apiUrl` - API ENDPOINT **default: 'http://chainradar.com/api'**
   * `version` - CURRENT API VERSION **default: 'v1'**
-  * `coin` - Each API request is relative to a coin, so there is a required parameter **default: bcn** 
+  * `coin` - Each API request is relative to a coin, so there is a required parameter **default: bcn**
 
 #### Status
 
@@ -53,7 +53,6 @@ api.getBlocksHeader(blockOptions, (data) => {
 ```
 
 Parameters:
-
 * from: integer Blocks starting height.
 * to: integer Blocks ending height.
 
@@ -73,7 +72,6 @@ api.getBlocksData(blockOptions, (data) => {
 ```
 
 Parameters:
-
 * from: integer Blocks starting height.
 * to: integer Blocks ending height.
 
@@ -88,8 +86,46 @@ api.getBlockHeader('077f4e2c32688157b695d44792ad9dfd986bbabb3fa7e4472805f9858d02
 ```
 
 Parameters:
-
 * height|hash: string Block height or hash.
+
+#### Block data
+
+Get block data by height or hash.
+
+```js
+api.getBlockData('077f4e2c32688157b695d44792ad9dfd986bbabb3fa7e4472805f9858d020f04', (data) => {
+  console.log(data)
+})
+```
+
+Parameters:
+* height|hash: string Block height or hash.
+
+#### Transaction header
+
+Get transaction header data.
+
+```js
+api.getTransactionHeader('b90da74c3ffc1210e1432766d06260330008b79cda9cdcb363702490ae054162', (data) => {
+  console.log(data)
+})
+```
+
+Parameters:
+* hash: string Transaction hash.
+
+#### Transaction data
+
+Get transaction full data.
+
+```js
+api.getTransactionData('b90da74c3ffc1210e1432766d06260330008b79cda9cdcb363702490ae054162', (data) => {
+  console.log(data)
+})
+```
+
+Parameters:
+* hash: string Transaction hash.
 
 ### Pre Publish
 
