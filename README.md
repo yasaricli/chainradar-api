@@ -1,1 +1,13 @@
-# chainradar-node-api
+# chainradar-api
+
+
+## Installation
+
+```
+npm install chainradar
+```
+
+## Usage
+
+```javascript
+```
